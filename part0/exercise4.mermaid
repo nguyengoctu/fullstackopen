@@ -9,7 +9,7 @@ sequenceDiagram
     deactivate server
     
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    browser->>server: redirect GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: the HTML file
     deactivate server
